@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #24292e;
+  font-size: 0.875rem;
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo",
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #24292e;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+li {
+  list-style: none;
+}
+
+/* 共通項目 */
+
+.wrapper {
+  max-width: 1200px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+
+h1 {
+  line-height: 1px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn,
+footer p,
+.copyright {
+  font-size: 0.75rem;
+}
+
+.btn {
+  padding: 13px 35px;
+  border: 1px solid #2a2a2a;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+/* img {
+  width: 100%;
+} */
+
+/* メインビジュアル */
+.mainvisual {
+  height: 100vh;
+  background-image: url(../img/mainvisual.jpg);
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 80px;
+}
+
+.mainvisual h1 {
+  text-align: right;
+  padding: 30px 30px 0 0;
+}
+
+/* イントロダクション */
+
+.intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  margin-bottom: 20px;
+}
+
+/* マガジン（アーカイブ、ニュー） */
+
+.magazine-text {
+  background: #707070;
+  max-width: 290px;
+  text-align: center;
+  padding: 15px 0 16px;
+  color: #ffffff;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+}
+
+.magazine-text h3 {
+  margin-bottom: 2px;
+}
+
+.archive {
+  background-image: url(../img/magazine-archive.jpg);
+}
+
+.new {
+  background-image: url(../img/magazine-new.jpg);
+}
+
+.archive,
+.new {
+  background-size: 100%;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  height: 0;
+  margin-bottom: 30px;
+}
+
+.magazine {
+  margin-bottom: 80px;
+}
+
+
+
+.archive:hover,
+.new:hover {
+  opacity: 0.7;
+}
+
+/* ファッション、スタイル */
+.fashion-style {
+  background-image: url(../img/fashion.jpg);
+  background-size: cover;
+  background-position: center top;
+  padding-top: 35px;
+  height: 0px;
+  padding-bottom: 485px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.fashion-style h2 {
+  margin-bottom: 20px;
+}
+
+.fashion-style p {
+  margin-bottom: 30px;
+}
+
+.fashion-style a {
+  display: inline-block;
+}
+
+/* カタログ、アンティーク */
+.catalog-antique {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.catalog-antique p {
+  text-align: left;
+}
+
+.catalog-antique h2 {
+  margin-bottom: 40px;
+}
+
+.catalog-antique p {
+  margin-bottom: 30px;
+}
+
+.catalog-antique .btn {
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.catalog {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.antique {
+  margin-bottom: 60px;
+}
+
+/* フッター */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 30px 0 30px;
+}
+
+.footer1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer2 {
+  margin-bottom: 30px;
+}
+
+.footer2 li {
+  font-size: 0.75rem;
+  line-height: 2;
+}
+
+.footer3 {
+  margin-bottom: 30px;
+}
+
+.footer3 p {
+  line-height: 2;
+}
+
+footer li::before {
+  content: "-";
+  padding-right: 5px;
+}
+
+/* コピーライト */
+.copyright {
+  text-align: center;
+  padding: 18px 0;
+}
+
+/* メディアクエリ */
+
+@media (min-width: 896px) {
+  /* マガジン（アーカイブ、ニュー） */
+  .magazine {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .magazine a {
+    width: 49%;
+  }
+
+  
+  
+  .archive,
+  .new {
+
+    margin-bottom: 0;
+  }
+  
+ 
+  
+  /* ファッション、スタイル */
+  .fashion-style {
+    padding-top: 60px;
+    padding-bottom: 460px;
+    margin-bottom: 80px;
+  }
+  
+  /* カタログ、アンティーク */
+
+  .catalog-antique ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-antique li {
+    width: 48%;
+  }
+
+  .catalog-antique .space {
+    width: 100%;
+    height: 120px;
+  }
+
+  .catalog {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .antique {
+    margin: 0;
+  }
+
+  .catalog p:nth-child(1) {
+    margin-bottom: 0;
+  }
+
+  .catalog-antique {
+    padding: 60px 0;
+  }
+
+  /* フッター */
+  footer .wrapper {
+    display: flex;
+  }
+
+  .footer1 {
+    margin-top: 130px;
+    width: 33.5%;
+    text-align: left;
+    margin-bottom: 138px;
+  }
+
+  .footer2 {
+    margin-top: 70px;
+    width: 33.5%;
+  }
+
+  .footer3 {
+    margin-top: 70px;
+    width: 32%;
+  }
+
+  /* コピーライト */
+  .copyright {
+    padding: 30px 0 25px;
+  }
+}
